@@ -896,6 +896,7 @@ type [<Erase>] Fui =
     static member inline menuSplitGroup (props: IMenuSplitGroupProp list) = createElement (import "MenuSplitGroup" FluentUIv9) props
     static member inline menuGroup (props: ReactElement list) = Interop.reactElementWithChildren (import "MenuGroup" FluentUIv9) props
     static member inline menuGroup (props: IMenuGroupProp list) = createElement (import "MenuGroup" FluentUIv9) props
+    static member inline menuGroupHeader (props : IMenuGroupHeaderProp list) = createElement (import "MenuGroupHeader" FluentUIv9) props
     static member inline menuDivider (props: IMenuDividerProp list) = createElement (import "MenuDivider" FluentUIv9) props
     static member inline menuItemLink (props: IMenuItemLinkProp list) = createElement (import "MenuItemLink" FluentUIv9) props
     static member inline menuItemSwitch (props: IMenuItemSwitchProp list) = createElement (import "MenuItemSwitch" FluentUIv9) props

@@ -329,41 +329,46 @@ let MenuTest () =
                         menuItemRadio.value "filter"
                         menuItemRadio.text "Filter Data"
                     ]
-                    Fui.menuDivider []
-                    Fui.menuItemCheckbox [
-                        menuItemCheckbox.compact
-                        menuItemCheckbox.icon (AccessTimeIcon [ iconStyles ])
-                        menuItemCheckbox.name "info"
-                        menuItemCheckbox.value "addInfo"
-                        menuItemCheckbox.text "Add Info"
-                    ]
-                    Fui.menuItemCheckbox [
-                        menuItemCheckbox.compact
-                        menuItemCheckbox.icon (DataIcon [ iconStyles ])
-                        menuItemCheckbox.name "info"
-                        menuItemCheckbox.value "infoTrends"
-                        menuItemCheckbox.text "Show Info Trends"
-                    ]
-                    Fui.menuItemCheckbox [
-                        menuItemCheckbox.compact
-                        menuItemCheckbox.icon (FunnelIcon [ iconStyles ])
-                        menuItemCheckbox.name "info"
-                        menuItemCheckbox.value "filterInfo"
-                        menuItemCheckbox.text "Filter Info"
-                    ]
-                    Fui.menuItemCheckbox [
-                        menuItemCheckbox.compact
-                        menuItemCheckbox.disabled true
-                        menuItemCheckbox.icon (Fui.icon.editFilled [ iconStyles ])
-                        menuItemCheckbox.name "disabled"
-                        menuItemCheckbox.value "disabled"
-                        menuItemCheckbox.text "Show Debug Panel"
-                    ]
-                    Fui.menuItemSwitch [
-                        menuItemSwitch.compact
-                        menuItemSwitch.name "new-explorer"
-                        menuItemSwitch.value "new-explorer"
-                        menuItemSwitch.text "Try V2"
+                    Fui.menuGroup [
+                        Fui.menuGroupHeader [
+                            menuGroupHeader.text "My Header"
+                        ]
+
+                        Fui.menuItemCheckbox [
+                            menuItemCheckbox.compact
+                            menuItemCheckbox.icon (AccessTimeIcon [ iconStyles ])
+                            menuItemCheckbox.name "info"
+                            menuItemCheckbox.value "addInfo"
+                            menuItemCheckbox.text "Add Info"
+                        ]
+                        Fui.menuItemCheckbox [
+                            menuItemCheckbox.compact
+                            menuItemCheckbox.icon (DataIcon [ iconStyles ])
+                            menuItemCheckbox.name "info"
+                            menuItemCheckbox.value "infoTrends"
+                            menuItemCheckbox.text "Show Info Trends"
+                        ]
+                        Fui.menuItemCheckbox [
+                            menuItemCheckbox.compact
+                            menuItemCheckbox.icon (FunnelIcon [ iconStyles ])
+                            menuItemCheckbox.name "info"
+                            menuItemCheckbox.value "filterInfo"
+                            menuItemCheckbox.text "Filter Info"
+                        ]
+                        Fui.menuItemCheckbox [
+                            menuItemCheckbox.compact
+                            menuItemCheckbox.disabled true
+                            menuItemCheckbox.icon (Fui.icon.editFilled [ iconStyles ])
+                            menuItemCheckbox.name "disabled"
+                            menuItemCheckbox.value "disabled"
+                            menuItemCheckbox.text "Show Debug Panel"
+                        ]
+                        Fui.menuItemSwitch [
+                            menuItemSwitch.compact
+                            menuItemSwitch.name "new-explorer"
+                            menuItemSwitch.value "new-explorer"
+                            menuItemSwitch.text "Try V2"
+                        ]
                     ]
                     Fui.menuDivider []
                     Fui.menu [
